@@ -1,5 +1,5 @@
 # 🥒 MCPickle
-A Plug-and-Play RAG Orchestrator for Modular Context Protocol Tools
+A Plug-and-Play RAG Orchestrator for Model Context Protocol Tools
 
 MCPickle is a lightweight, open-source platform that helps Large Language Models (LLMs) dynamically retrieve, select, and invoke MCP (Model Context Protocol) tools — all through an intelligent RAG (Retrieval-Augmented Generation) pipeline.
 
@@ -14,5 +14,3 @@ With too many tools to manage and too little time to wire them together, MCPickl
 - 🌱 Ready to grow: works out of the box, designed for extension
 
 Whether you’re building agentic pipelines, AI copilots, or autonomous toolchains — MCPickle gives your LLM the context muscle it needs.
-
-🥒 MCPickle: “It picks the protocol, so you don’t have to.”
