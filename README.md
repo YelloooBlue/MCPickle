@@ -14,3 +14,26 @@ With too many tools to manage and too little time to wire them together, MCPickl
 - 🌱 Ready to grow: works out of the box, designed for extension
 
 Whether you’re building agentic pipelines, AI copilots, or autonomous toolchains — MCPickle gives your LLM the context muscle it needs.
+
+
+## 📚 Getting Started
+
+### How to run
+1. Clone this repo, and run ``pip install -r requirements.txt``
+2. Set up your Embedding model and rerank model's url and api key in ``.env``
+3. Run ``python main.py`` to start the server
+4. Add your other MCP server by requsting ``/mcp/addserver`` 
+```shell
+curl -X POST http://127.0.0.1:8001/mcp/addserver --data '{"name": "NewMCPServer", "method": "streamablehttp", "url": "http://127.0.0.1:8000/mcp"}'
+# Now we only support SSE and StreamableHTTP, but we will support more in the future
+```
+5. Add this server to your LLM App such as Cherry Studio、claude...
+6. Have fun
+
+### Other Things
+We will support more features in the future, such as:
+- [ ] Add Stdio method support for MCP server and MCPickle
+- [ ] An web dashboard for MCPickle that you could manage your MCP server and MCP tool easily
+- [ ] ......
+
+Stay tuned for more updates!
